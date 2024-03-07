@@ -1,0 +1,28 @@
+1 E-Commerce Android App
+
+a. Overview
+
+This Android app aims to provide users with a seamless e-commerce experience featuring login, sign-up, and a product page. The app utilizes Firebase for database management to store customer data securely.
+
+b. Technologies Implemented
+
+- Android Studio for app development
+- Firebase for database connectivity
+
+c. App Activities
+
+	1. **Login Activity:**
+   		- Fields: Username, Password
+   		- Actions: Login button
+
+	2. **Sign-Up Activity:**
+   		- Fields: Username, Email, Password, Confirm Password
+   		- Actions: Sign-Up button
+
+	3. **Product Page Activity:**
+   		- Display: List of products with details
+   		- Actions: View product details, Add to cart
+
+d. Development Progress
+
+- I completed scaffolding for the login activity in Android Studio.

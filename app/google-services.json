@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "117448143226",
+    "project_id": "ecom-cfc27",
+    "storage_bucket": "ecom-cfc27.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117448143226:android:63099bd52ccf6559c9e6c3",
+        "android_client_info": {
+          "package_name": "com.Assignment_2.ecommercestore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1Zqka3Vk_p787SJ8ajxdos3wWpSw7knA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    tools:context=".CheckoutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Checkout"
+            android:textAlignment="center"
+            android:textColor="@color/bgColor"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:text="Alomost there, one more step to go!"
+            android:textAlignment="textStart"
+            android:textColor="@color/bgColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:text="Complete your payment information to complete your order."
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/custom_edittext"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/labelHolder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Cardholder Name:"
+                    android:textColor="@color/bgColor"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/checkoutCardHolderName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Enter card holder name"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#ccc"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/labelEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Email:"
+                    android:textColor="@color/bgColor"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/checkoutEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_email_24"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Enter your email address"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#ccc"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/labelCardNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Card Number:"
+                    android:textColor="@color/bgColor"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/checkoutCardNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_credit_card_24"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Enter your credit card number"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#ccc"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/labelExpiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:inputType="number"
+                    android:text="Expiry Date:"
+                    android:textColor="@color/bgColor"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/checkoutExpiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_calendar_month_24"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Enter expiry date"
+                    android:inputType="textPostalAddress"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#ccc"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/labelCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Security Code:"
+                    android:textColor="@color/bgColor"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/checkoutCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_lock_24"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Enter your security Code"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#ccc"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnCheckout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/bgColor"
+                    android:text="Checkout"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:cornerRadius="20dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toBottomOf="@+id/checkoutCode" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>
